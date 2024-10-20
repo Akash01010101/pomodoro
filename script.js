@@ -48,5 +48,5 @@ startBtn.addEventListener('click', startTimer);
 pauseBtn.addEventListener('click', pauseTimer);  
 resetBtn.addEventListener('click', resetTimer);  
 
-document.getElementById('10m').addEventListener('click',()=> timeLeft = timeLeft + (10*60))
-document.getElementById('30m').addEventListener('click',()=> timeLeft = timeLeft + (30*60))
+document.getElementById('10m').addEventListener('click',()=> {timeLeft = timeLeft + (10*60); updateDisplay()})
+document.getElementById('30m').addEventListener('click',()=> {timeLeft = timeLeft + (30*60); updateDisplay()})
